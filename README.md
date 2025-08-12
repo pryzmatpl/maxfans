@@ -1,3 +1,4 @@
+```
 for enable in /sys/class/hwmon/hwmon*/pwm*_enable /sys/class/drm/card*/device/hwmon/hwmon*/pwm*_enable; do
     pwm="${enable%_enable}"
     if [ -e "$enable" ]; then
@@ -44,4 +45,6 @@ for hw in /sys/class/hwmon/hwmon*; do
     done
 done
 echo "==========================="
+```
+
 
